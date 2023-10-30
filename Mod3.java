@@ -1,6 +1,7 @@
 //Alejandro Quezada
 //10/30/2023
 //Module 3 Programming Assignment - Rock-Paper-Scissors
+//The purpose of this program is for the user to play a game of Rock Paper Scissors with the computer.
 import java.util.Random;
 import java.util.Scanner;
 //Note for myself: doing "import java.util.*;" will work the same as the imports above

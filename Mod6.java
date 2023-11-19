@@ -8,18 +8,18 @@ public class Mod6 {
     public static void main(String[] args) {
 
         int numOne = 1;
-        int y = 0;
+        int loopOne = 0;
 
 
         for(int start = 0; start < 7; ++start){
             int powerTwo = start;
-            int test = start;
+
             for(int spaceOne = 15 ; spaceOne > start ; --spaceOne){
                 System.out.print(" ");
             }
 
 
-            for(;y <= start; ++y){
+            for(;loopOne <= start; ++loopOne){
                 System.out.print(numOne + " ");
 
                 for(int powerOne = 1; powerOne <= start;++powerOne){
@@ -28,7 +28,7 @@ public class Mod6 {
                 }
 
 
-                for(int k = 1;k <= start; ++k){
+                for(int loopTwo = 1;loopTwo <= start; ++loopTwo){
                     int descend = (int) Math.pow(2, powerTwo) / 2;
                     --powerTwo;
                     System.out.print(descend + " ");
@@ -37,13 +37,14 @@ public class Mod6 {
             }
         
 
-            for(int spaceTwo = 10 ; spaceTwo > start ;){
-                spaceTwo = spaceTwo -test;
-                --spaceTwo;
+            for(int spaceTwo = 9 ; spaceTwo >= start ;--spaceTwo){
+                for(int loopThree = 6; loopThree >= 0;){
                 System.out.print(" ");
+                loopThree -= 3;
+                }
             }
 
-
+            
         System.out.println("@");
 
         }

@@ -13,6 +13,7 @@ public class Mod6 {
 
         for(int start = 0; start < 7; ++start){
             int powerTwo = start;
+            int test = start;
             for(int spaceOne = 15 ; spaceOne > start ; --spaceOne){
                 System.out.print(" ");
             }
@@ -36,7 +37,9 @@ public class Mod6 {
             }
         
 
-            for(int spaceTwo = 10 ; spaceTwo > start ;--spaceTwo){
+            for(int spaceTwo = 10 ; spaceTwo > start ;){
+                spaceTwo = spaceTwo -test;
+                --spaceTwo;
                 System.out.print(" ");
             }
 

@@ -16,17 +16,52 @@ public class Mod7 {
     }
 
     public static void rules(String ruleCheck){
-        if(ruleCheck.length() >= 8){
-            for(int loop1 = 0; loop1 <= ruleCheck.length();++loop1){
-                Boolean uCase = Character.isUpperCase(ruleCheck.charAt(loop1));
-                Boolean lCase = Character.isLowerCase(ruleCheck.charAt(loop1));
+        boolean uCase = false;
+        boolean lCase = false;
+        boolean leng = false;
+        double total = 0;
 
-                if(uCase == true && lCase == true){
-                System.out.println("Password meets all requirements!!!");
-                }
+        if(ruleCheck.length() >= 8){
+            leng = true;
+        } else {
+            leng = false;
+        }
+
+        if(leng = true){
+            total += 1;
+        } else if(leng = false){
+            total = total -100;
+        }
+
+
+        for(int loop1 = 0; loop1 <= ruleCheck.length();++loop1){
+            uCase = Character.isUpperCase(ruleCheck.charAt(loop1));
+            if(uCase = true){
+                break;
             }
         }
-        else{
+        if(uCase = true){
+            total += 1;
+        } else if (uCase = false){
+            total = total - 100;
+        }
+
+
+        for(int loop2 = 0; loop2 <= ruleCheck.length();++loop2){
+            lCase = Character.isLowerCase(ruleCheck.charAt(loop2));
+            if(lCase = true){
+                break;
+            }
+        }
+        if(lCase = true){
+            total += 1;
+        } else if(lCase = false){
+            total = total - 100;
+        }
+
+        if(total > 0){
+            System.out.println("Password meets all requirements!!!");
+        } else{
             System.out.println("The password did not meet the requirement.");
         }
     }

@@ -2,7 +2,9 @@
 //11/21/2023
 //Module 7 Programming Assignment
 
+
 import java.util.*;
+
 
 public class Mod7 {
     public static void main(String [] args){
@@ -19,18 +21,19 @@ public class Mod7 {
         boolean uCase = false;
         boolean lCase = false;
         boolean leng = false;
-        double total = 0;
+        boolean total = false;
+        boolean total2 = false;
+        boolean total3 = false;
 
         if(ruleCheck.length() >= 8){
             leng = true;
         } else {
             leng = false;
         }
-
         if(leng = true){
-            total += 1;
+            total = true;
         } else if(leng = false){
-            total = total -100;
+            total = false;
         }
 
 
@@ -41,9 +44,9 @@ public class Mod7 {
             }
         }
         if(uCase = true){
-            total += 1;
+            total2 = true;
         } else if (uCase = false){
-            total = total - 100;
+            total2 = false;
         }
 
 
@@ -54,12 +57,13 @@ public class Mod7 {
             }
         }
         if(lCase = true){
-            total += 1;
+            total3 = true;
         } else if(lCase = false){
-            total = total - 100;
+            total3 = false;
         }
 
-        if(total > 0){
+
+        if(total2 == true){
             System.out.println("Password meets all requirements!!!");
         } else{
             System.out.println("The password did not meet the requirement.");

@@ -13,60 +13,56 @@ public class Mod7 {
 
         System.out.println("Please input a password with the following requirements.\n8+ Characters\nContains Letters & Numbers\nOne uppercase and one lowercase character\n");
         String uPassword = uInput.nextLine();
+        uInput.close();
         
         Mod7.rules(uPassword);
     }
 
     public static void rules(String ruleCheck){
+        int total2 = 0;
+        int leng = ruleCheck.length();
+
+        if(leng >= 8){
         boolean uCase = false;
         boolean lCase = false;
-        boolean leng = false;
-        boolean total = false;
-        boolean total2 = false;
-        boolean total3 = false;
-
-        if(ruleCheck.length() >= 8){
-            leng = true;
-        } else {
-            leng = false;
-        }
-        if(leng = true){
-            total = true;
-        } else if(leng = false){
-            total = false;
-        }
-
-
-        for(int loop1 = 0; loop1 <= ruleCheck.length();++loop1){
-            uCase = Character.isUpperCase(ruleCheck.charAt(loop1));
-            if(uCase = true){
+        try{
+        for(int loop1 = 0; loop1 <= leng;++loop1){
+            char upper = ruleCheck.charAt(loop1);
+            if(Character.isUpperCase(upper)){
+                total2 += 1;
+                System.out.println(total2);
                 break;
             }
+
         }
-        if(uCase = true){
-            total2 = true;
-        } else if (uCase = false){
-            total2 = false;
+        }
+        finally{
+            System.out.println("");
         }
 
-
-        for(int loop2 = 0; loop2 <= ruleCheck.length();++loop2){
-            lCase = Character.isLowerCase(ruleCheck.charAt(loop2));
-            if(lCase = true){
+        try{
+        System.out.println(total2);
+        for(int loop2 = 0; loop2 <= leng;++loop2){
+            char lower = ruleCheck.charAt(loop2);
+            if(Character.isLowerCase(lower)){
+                total2 += 1;
+                System.out.println(total2);
                 break;
             }
+
         }
-        if(lCase = true){
-            total3 = true;
-        } else if(lCase = false){
-            total3 = false;
+        }
+        finally{
+            System.out.println("");
         }
 
-
-        if(total2 == true){
+        if(total2 == 2){
             System.out.println("Password meets all requirements!!!");
         } else{
             System.out.println("The password did not meet the requirement.");
+        }
+        } else {
+            System.out.println(("Does not meet length requirements."));
         }
     }
 }

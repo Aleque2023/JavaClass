@@ -1,5 +1,5 @@
 //Alejandro Quezada
-//11/21/2023
+//11/25/2023
 //Module 7 Programming Assignment
 
 
@@ -23,8 +23,7 @@ public class Mod7 {
         int leng = ruleCheck.length();
 
         if(leng >= 8){
-        boolean uCase = false;
-        boolean lCase = false;
+            
         try{
         for(int loop1 = 0; loop1 <= leng;++loop1){
             char upper = ruleCheck.charAt(loop1);
@@ -35,9 +34,8 @@ public class Mod7 {
             }
 
         }
-        }
-        finally{
-            System.out.println("");
+        } catch(Exception e){
+
         }
 
         try{
@@ -51,9 +49,8 @@ public class Mod7 {
             }
 
         }
-        }
-        finally{
-            System.out.println("");
+        } catch (Exception e) {
+            
         }
 
         if(total2 == 2){

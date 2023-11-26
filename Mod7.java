@@ -1,6 +1,6 @@
 //Alejandro Quezada
 //11/25/2023
-//Module 7 Programming Assignment
+//Module 7 Programming Assignment - Creating a password checker program
 
 
 import java.util.*;
@@ -19,45 +19,69 @@ public class Mod7 {
     }
 
     public static void rules(String ruleCheck){
-        int total2 = 0;
+        int total = 0;
         int leng = ruleCheck.length();
 
-        if(leng >= 8){
-            
-        try{
-        for(int loop1 = 0; loop1 <= leng;++loop1){
-            char upper = ruleCheck.charAt(loop1);
-            if(Character.isUpperCase(upper)){
-                total2 += 1;
-                System.out.println(total2);
-                break;
+        if(leng >= 8){  
+
+
+            try{
+                for(int loop1 = 0; loop1 <= leng; ++loop1){
+                    char upper = ruleCheck.charAt(loop1);
+                    if(Character.isUpperCase(upper)){
+                        total += 1;
+                        break;
+                    }
+                }
+            } catch(Exception e){
+
             }
 
-        }
-        } catch(Exception e){
 
-        }
+            try{
+                for(int loop2 = 0; loop2 <= leng; ++loop2){
+                    char lower = ruleCheck.charAt(loop2);
+                    if(Character.isLowerCase(lower)){
+                        total += 1;
+                        break;
+                    }
+                }
+            } catch (Exception e){   
 
-        try{
-        System.out.println(total2);
-        for(int loop2 = 0; loop2 <= leng;++loop2){
-            char lower = ruleCheck.charAt(loop2);
-            if(Character.isLowerCase(lower)){
-                total2 += 1;
-                System.out.println(total2);
-                break;
             }
 
-        }
-        } catch (Exception e) {
-            
-        }
+        
+            try{
+                for(int loop3 = 0; loop3 <= leng; ++loop3){
+                    char ch = ruleCheck.charAt(loop3);
+                    if(Character.isAlphabetic(ch)){
+                        total += 1;
+                        break;
+                    }
+                }
+            } catch (Exception e){
 
-        if(total2 == 2){
-            System.out.println("Password meets all requirements!!!");
-        } else{
-            System.out.println("The password did not meet the requirement.");
-        }
+            }
+
+
+            try{
+                for(int loop4 = 0; loop4 <= leng; ++loop4){
+                    char num = ruleCheck.charAt(loop4);
+                    if(Character.isDigit(num)){
+                        total += 1;
+                        break;
+                    }
+                }
+            } catch (Exception e){
+
+            }
+
+
+            if(total == 4){
+                System.out.println("Password meets all requirements!!!");
+            } else {
+                System.out.println("The password did not meet the requirement.");
+            }
         } else {
             System.out.println(("Does not meet length requirements."));
         }

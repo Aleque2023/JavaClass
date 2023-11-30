@@ -6,5 +6,8 @@ import java.math.*;
 import java.util.*;
 
 public class Mod9 {
-    
+
+    int arrayLen = 21;
+    int array1[] = null;
+    array1 = new int [arrayLen];
 }

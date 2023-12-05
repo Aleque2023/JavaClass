@@ -12,7 +12,7 @@ public class Mod10DIs {
         Set set = new HashSet ();
         Integer intObject;
         for(int i = 0; i < 100; ++i){
-             intObject = new Integer ((int) (Math.random() * 10 + 1));
+             intObject = ((int) (Math.random() * 10 + 1));
              list.add(intObject);
              set.add(intObject);
         }

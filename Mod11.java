@@ -14,12 +14,12 @@ public class Mod11 {
                 System.out.println("[ " + x + " ] " + "[ " + y + " ] = " + array1[x][y]);
             }
         }
+
         int[] endOne = Mod11.locateLargest(array1);
         System.out.println("The location of the largest element in the 1st array is: [" + endOne[0] + "][" + endOne[1] + "]");
 
         int[] endThree = Mod11.locateSmallest(array1);
         System.out.println("The location of the smallest element in the 1st array is: [" + endThree[0] + "][" + endThree[1] + "]\n\n");
-
 
         for(int a = 0; a < array2.length; ++a){
             for(int b = 0; b < array2[a].length; ++b){
@@ -27,6 +27,7 @@ public class Mod11 {
                 System.out.println("[ " + a + " ] " + "[ " + b + " ] = " + array2[a][b]);
             }
         }
+
         int[] endTwo = Mod11.locateLargest(array2);
         System.out.println("The location of the largest element in the 2nd array is: [" + endTwo[0] + "][" + endTwo[1] + "]");
 

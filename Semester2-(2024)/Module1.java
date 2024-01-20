@@ -2,10 +2,14 @@
 //1/11/2024
 //Module 1 Programming Assignment
 
-public class Module1 {
-    double ex = 20;
-    public static void main(String [] aStrings){
-        Module1 myObj = new Module1();
-        System.out.println(myObj.ex);
-    }
+class Fan {
+    final int STOPPED = 0;
+    final int SLOW = 1;
+    final int MEDIUM = 2;
+    final int FAST = 3;
+
+    private int speed = STOPPED;
+    private boolean on;
+    private int radius = 6;
+    private String color = "white";
 }

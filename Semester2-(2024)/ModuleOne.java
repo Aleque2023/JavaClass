@@ -64,8 +64,8 @@ class Fan {
     }
 }
 
-public class Module1 {
-    public static void module1(String[] args) {
+public class ModuleOne {
+    public static void moduleOne(String[] args) {
         Fan instanceOne = new Fan();
         System.out.println(instanceOne.toString());
 

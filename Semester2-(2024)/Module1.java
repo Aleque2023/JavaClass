@@ -2,7 +2,7 @@
 //1/11/2024
 //Module 1 Programming Assignment
 
-public class Fan {
+class Fan {
     static final int STOPPED = 0;
     static final int SLOW = 1;
     static final int MEDIUM = 2;
@@ -61,5 +61,12 @@ public class Fan {
 
     public String toString() {
         return "Fan { " + "speed=" + speed + ", on=" + on + ", radius=" + radius + ", color=" + color + "\"" + " }";
+    }
+}
+
+public class Module1 {
+    public static void module(String[] args) {
+        Fan instanceOne = new Fan();
+        System.out.println(instanceOne.toString());
     }
 }

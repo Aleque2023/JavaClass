@@ -1,5 +1,5 @@
 //Alejandro Quezada
-//1/11/2024
+//1/20/2024
 //Module 1 Programming Assignment
 
 public class ModuleOne {
@@ -74,6 +74,6 @@ class Fan {
     }
 
     public String toString() {
-        return "Fan { " + "speed=" + speed + ", on=" + on + ", radius=" + radius + ", color=" + color + "\"" + " }";
+        return "Fan { " + "speed=" + speed + ", on=" + on + ", radius=" + radius + ", color=" + "\"" + color + "\"" + " }";
     }
 }

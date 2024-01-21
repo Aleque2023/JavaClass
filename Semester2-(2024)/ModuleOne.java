@@ -2,6 +2,20 @@
 //1/11/2024
 //Module 1 Programming Assignment
 
+public class ModuleOne {
+    public static void main(String[] args) {
+        moduleOne(args);
+    }
+
+    public static void moduleOne(String [] args) {
+        Fan instanceOne = new Fan();
+        System.out.println(instanceOne.toString());
+
+        Fan instanceTwo = new Fan(Fan.MEDIUM, true, 4, "cyan");
+        System.out.println(instanceTwo.toString());
+    }
+}
+
 class Fan {
     static final int STOPPED = 0;
     static final int SLOW = 1;
@@ -61,15 +75,5 @@ class Fan {
 
     public String toString() {
         return "Fan { " + "speed=" + speed + ", on=" + on + ", radius=" + radius + ", color=" + color + "\"" + " }";
-    }
-}
-
-public class ModuleOne {
-    public static void moduleOne(String[] args) {
-        Fan instanceOne = new Fan();
-        System.out.println(instanceOne.toString());
-
-        Fan instanceTwo = new Fan(Fan.MEDIUM, true, 4, "cyan");
-        System.out.println(instanceTwo.toString());
     }
 }

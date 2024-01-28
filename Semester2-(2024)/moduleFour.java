@@ -13,7 +13,7 @@ public class moduleFour {
 }
 
 class AlejandroArrayListTest {
-    public static Integer max(ArrayList list) {
+    public static Integer max(ArrayList<Integer> list) {
         if (list.isEmpty()) {
             return 0;
         }

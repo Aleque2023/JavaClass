@@ -1,6 +1,6 @@
 package module6;
 
-public class InternationalDivision {
+public class InternationalDivision extends Division{
     private String country;
     private String language;
 

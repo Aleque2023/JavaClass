@@ -1,6 +1,6 @@
 package module6;
 
-public class DomesticDivision {
+public class DomesticDivision extends Division{
     
     private String state;
 

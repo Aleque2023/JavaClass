@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 public class AQ_JavaFX extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage test) {
         Button button = new Button("Click");
 
         StackPane root = new StackPane();
@@ -15,9 +15,9 @@ public class AQ_JavaFX extends Application {
 
         Scene scene = new Scene(root, 300, 200);
 
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Clicking program");
-        primaryStage.show();
+        test.setScene(scene);
+        test.setTitle("Clicking program");
+        test.show();
     }
 
     public static void main(String[] args) {

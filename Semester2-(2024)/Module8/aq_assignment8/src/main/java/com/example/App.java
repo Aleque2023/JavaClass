@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.util.*;
 
+///Alejandro Quezada
+///Feb 18 2024
+///Module 8 Assignment
+
 public class App extends Application {
 
     int totalNum = 52;

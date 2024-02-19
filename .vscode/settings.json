@@ -1,0 +1,8 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Semester2-(2024)",
+        "Semester1-(2023)",
+        "Module8/aq_assignment8/src/main/java/com/example"
+    ]
+}

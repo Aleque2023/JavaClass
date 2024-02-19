@@ -45,5 +45,7 @@ public class AQ_Module9_lambda {
 
 
         System.out.println("\nUsing Function:");
+        Function<Integer, Double> times = d -> d * 3.14;
+        System.out.println(times.apply(20));
     }
 }

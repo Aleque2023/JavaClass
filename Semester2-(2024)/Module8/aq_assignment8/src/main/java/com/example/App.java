@@ -15,7 +15,7 @@ import java.util.*;
 public class App extends Application {
 
     int totalNum = 52;
-    int NUM_DISPLAY_CARDS = 4;
+    int showCards = 4;
     String location = "Semester2-(2024)\\Module8\\cards"; ///This is where the location where my cards pngs are at.
     String fName = ".png";
 
@@ -31,7 +31,7 @@ public class App extends Application {
         Collections.shuffle(cardNum);
 
         cardpic = new ArrayList<>();
-        for (int i = 0; i < NUM_DISPLAY_CARDS; i++) {
+        for (int i = 0; i < showCards; i++) {
             int cardIndex = cardNum.get(i);
             String cardPath = location + File.separator + cardIndex + fName;
             try {

@@ -3,6 +3,8 @@
     "java.project.sourcePaths": [
         "Semester2-(2024)",
         "Semester1-(2023)",
-        "Module8/aq_assignment8/src/main/java/com/example"
+        "Module8/aq_assignment8/src/main/java/com/example",
+        "Module8"
+        "Module8/aq_assignment8/src/main/java/com/example/App.java"
     ]
 }

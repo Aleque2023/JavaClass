@@ -45,8 +45,8 @@ public class App extends Application {
         HBox root = new HBox();
         for (Image cardImage : cardpic) {
             ImageView imageView = new ImageView(cardImage);
-            imageView.setFitWidth(150);
-            imageView.setFitHeight(200);
+            imageView.setFitWidth(300);
+            imageView.setFitHeight(400);
             root.getChildren().add(imageView);
         }
 

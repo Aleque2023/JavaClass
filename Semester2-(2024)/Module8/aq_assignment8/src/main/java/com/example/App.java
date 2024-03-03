@@ -5,7 +5,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import java.io.File;
 import java.util.*;
@@ -57,8 +56,10 @@ public class App extends Application {
         }
 
         VBox end = new VBox();
-
         Button reset = new Button("Reset It");
+       // reset.setDisable(true);
+        //reset.setDisable(false);
+        //reset.setVisible(false);
         reset.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -84,7 +85,7 @@ public class App extends Application {
             try {
                 Image cardImage = new Image(new File(cardPath).toURI().toURL().toString());
                 cardpic.add(cardImage);
-            } catch (MalformedURLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
